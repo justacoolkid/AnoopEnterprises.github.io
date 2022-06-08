@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.social-link:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.5;
+    background: #fff;
+    transition: 0.5s ease;
+    -webkit-animation: blob 12s linear infinite alternate;
+            animation: blob 12s linear infinite alternate;
+  }
+  .social-link:hover:before {
+    opacity: 1;
+  }
+  .social-link.twitter:before {
+    background: linear-gradient(165deg, #1da1f2, #657786);
+  }
+  .social-link.facebook:before {
+    background: linear-gradient(165deg, #3c5a99, #dfe3ee);
+  }
+  .social-link.instagram:before {
+    background: linear-gradient(165deg, #405de6, #fd1d1d);
+  }
+  
+  @-webkit-keyframes blob {
+    0%, 100% {
+      border-radius: 77% 47% 61% 49%;
+    }
+    20% {
+      border-radius: 89% 26% 70% 30%;
+    }
+    40% {
+      border-radius: 56% 93% 56% 94%;
+    }
+    60% {
+      border-radius: 68% 60% 94% 96%;
+    }
+    80% {
+      border-radius: 34% 74% 59% 82%;
+    }
+  }
+  
+  @keyframes blob {
+    0%, 100% {
+      border-radius: 77% 47% 61% 49%;
+    }
+    20% {
+      border-radius: 89% 26% 70% 30%;
+    }
+    40% {
+      border-radius: 56% 93% 56% 94%;
+    }
+    60% {
+      border-radius: 68% 60% 94% 96%;
+    }
+    80% {
+      border-radius: 34% 74% 59% 82%;
+    }
+  }
